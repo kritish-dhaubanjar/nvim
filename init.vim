@@ -9,8 +9,10 @@ set hidden
 
 " Color Scheme
 colorscheme onedark
+source $HOME/.config/nvim/themes/onedark.vim
 
 call plug#begin('~/.vim/plugged')
+Plug 'joshdick/onedark.vim'
 Plug 'preservim/nerdtree'
 Plug 'leafoftree/vim-vue-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
