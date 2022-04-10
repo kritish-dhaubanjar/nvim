@@ -7,6 +7,7 @@ set tabstop=2
 set shiftwidth=2
 set hidden
 set expandtab
+set relativenumber
 
 " Color Scheme
 colorscheme onedark
@@ -14,6 +15,7 @@ source $HOME/.config/nvim/themes/onedark.vim
 
 call plug#begin('~/.vim/plugged')
 Plug 'joshdick/onedark.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
